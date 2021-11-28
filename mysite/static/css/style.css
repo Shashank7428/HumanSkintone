@@ -1,0 +1,276 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.navigation{padding-top:30px;
+  padding-bottom:30px;
+  top:0;
+  position: absolute;
+  width:100%;
+  z-index:10;
+  overflow: hidden;
+}
+.navbar-right{
+  float:right;
+  padding-right:10%;
+}
+.navbar-logo{
+  padding-left:10%;
+  font-variant: small-caps;
+  font-size:50px;
+  font-weight:bold;
+  font-family: "Times New Roman", Times, serif; 
+  font-style: oblique;
+  text-decoration:none;
+  color:#ffff; 
+}
+
+.navbar-right a{
+  text-decoration:none;
+  font-size:1.6em;
+  display: inline-block;  
+  padding:10px 30px ;
+  color: #ffff;
+font-family: "Times New Roman", Times, serif; 
+  font-style:normal;
+  font-variant: small-caps;
+  font-weight:800;
+}
+
+.navbar-right a:hover{
+  text-decoration:underline;
+}
+
+.showcase
+{ position: absolute;
+  right:0;
+  width: 100%;
+  justify-content:space-between;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  background: #1111;
+  transition: 0.5s;
+  z-index: 2;
+  
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: #e39c02;
+  object-fit:cover;
+  opacity: 0.8;
+  
+}
+.overlay
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#f4a803;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  font-style: oblique;
+  font-family: "Times New Roman",serif;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  font-style: oblique;
+  font-family: "Times New Roman",serif;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.2em;
+  font-style: oblique;
+  color: #451f01;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  font-style: italic; 
+  font-family: "Times New Roman",serif;
+  background: #c1c2b0;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+.social
+{
+  position:absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.4s;
+}
+.social li a:hover
+{
+  transform: scale(0.7) translateY(-15px);
+
+
+}
+#upload-page{
+  background:#1111;
+}
+
+.text-2{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align:center;
+  padding-top:100px;
+  transition:0.5s;
+}
+#video {
+ 
+  border: 1px solid black;
+  width: 320px;
+  height: 240px;
+  z-index: 101;
+}
+
+#photo {
+  
+  border: 1px solid black;
+  width: 320px;
+  height: 240px;
+  z-index: 101;
+}
+
+#canvas {
+  
+  display: none;
+  z-index: 101;
+}
+
+.camera {
+  
+  width: 340px;
+  display: inline-block;
+  z-index: 101;
+}
+
+.output {
+  
+  width: 340px;
+  display: inline-block;
+  
+}
+
+#startbutton {
+  
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 36px;
+  padding: 5px;
+  background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1.0);
+  cursor: pointer;
+}
+
+.contentarea {
+  padding-top:20px;
+  margin-left:20px;
+  font-size: 16px;
+  text-align: left;
+  position:relative;
+  font-family: 'Poppins', sans-serif;
+  z-index:101;
+}
+#startbutton{
+  position:relative;
+  text-align:left;
+  margin-left: 110px;
+  z-index:101;
+}
+.text-3{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align:center;
+  transition:0.5s;
+  float:center;
+}
+
+@media(max-width: 991px) {
+      .showcase
+  
+  {
+    padding: 40px;
+  }
+     .text h2
+  {
+    font-size: 3em;
+  }
+      .text h3
+  {
+    font-size: 2em;
+  }
+  
+}
+
+
